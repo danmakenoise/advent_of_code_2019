@@ -1,8 +1,8 @@
-import getFuelFromMass, { getFuelFromMasses } from './getFuelFromMass';
-import input from './input';
+import getFuelFromMass, { getFuelFromMasses } from "./getFuelFromMass";
+import input from "./input";
 
-describe('getFuelFromMass()', () => {
-  test('example inputs', () => {
+describe("getFuelFromMass()", () => {
+  test("example inputs", () => {
     expect(getFuelFromMass(12)).toBe(2);
     expect(getFuelFromMass(14)).toBe(2);
     expect(getFuelFromMass(1969)).toBe(654);
@@ -10,12 +10,12 @@ describe('getFuelFromMass()', () => {
   });
 });
 
-describe('getFuelFromMasses()', () => {
-  test('example inputs', () => {
+describe("getFuelFromMasses()", () => {
+  test("example inputs", () => {
     expect(getFuelFromMasses(12, 14, 1969)).toBe(658);
   });
 
-  test('puzzle input', () => {
+  test("puzzle input", () => {
     expect(getFuelFromMasses(...input)).toBe(3402634);
   });
 });
